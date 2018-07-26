@@ -12,6 +12,7 @@ return Object.assign({}, object, { [key]: value })
 
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+<<<<<<< HEAD
   object[key] = value
   return object
 }
@@ -27,4 +28,7 @@ function destructivelyDeleteFromObjectByKey(object, key) {
   // console.log(object) <---- within a console
   delete object[key]; // <---deletes the key which actually deletes the key/pair even though 'value' is not passed as an argument, it satisfies both questions
   return object; //<--- returns the mutated object
+=======
+  object { [key: value] }
+>>>>>>> a93e1b91597048022e80b45767497f18bed02561
 }
